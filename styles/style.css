@@ -1,0 +1,474 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*===================== Global styles ====================== */
+body {
+  font-family: "SF Pro Display", "Open Sans", sans-serif;
+  background-color: #f7f4ef;
+}
+
+/*===================== Navbar styles starts =======================*/
+.navbar {
+  overflow: hidden;
+  padding: 17px 100px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+/*===================== Navbar styles end =======================*/
+
+/*===================== banner styles starts =======================*/
+.main-banner {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.left-banner,
+.right-banner {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* banner left image start  */
+.left-banner {
+  position: relative;
+  flex-direction: column;
+}
+.light-green,
+.dark-green {
+  position: absolute;
+  z-index: -1;
+}
+
+.light-green {
+  left: 0px;
+  top: 0;
+  transform: rotate(-15deg);
+}
+
+.dark-green {
+  bottom: 20px;
+  right: 0;
+}
+.left-banner > p {
+  font-size: 12px;
+  align-self: flex-start;
+  margin-top: 20px;
+}
+.left-banner > p span {
+  color: #f22a5d;
+}
+/* banner left image end  */
+/* banner right image start  */
+
+.right-banner {
+  margin-left: 100px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.right-banner > h1 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 48px;
+}
+.right-banner > h1 > span {
+  color: #f22a5d;
+}
+.right-banner > h3 {
+  font-size: 21px;
+  font-weight: 200;
+  margin-top: 10px;
+}
+.right-banner > h3 > span {
+  font-weight: 600;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+.apple-button {
+  border: none;
+  width: 100px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  box-shadow: 6px 6px #d2fd33;
+}
+.apple-button img {
+  width: 100%;
+  height: 100%;
+}
+.android-button {
+  background-color: #fff;
+  color: black;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 9px;
+  font-weight: bolder;
+  box-shadow: 6px 6px #475a00; /* Retain the box shadow on hover */
+  cursor: pointer;
+}
+.right-banner > p {
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.right-banner > p span {
+  color: #f22a5d;
+}
+/* banner right image end  */
+/* banner bottom image start  */
+.bottom-img {
+  background-color: #d2fd33;
+  padding: 10px;
+  margin: 10px 0;
+}
+.bottom-img img {
+  width: 100%;
+}
+/* banner bottom image end  */
+/* banner bottom text right start   */
+.bottom-text-right p {
+  text-align: right;
+  margin-right: 10px;
+}
+/* banner bottom text right end  */
+/*===================== banner styles end =======================*/
+
+/*===================== money styles starts =======================*/
+#time {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 90px;
+}
+.left-time {
+  flex: 1.1;
+}
+.right-time {
+  flex: 0.9;
+}
+
+/* left time styles start  */
+.left-time h1 {
+  padding-left: 85px;
+  font-size: 48px;
+  font-weight: bold;
+  padding-bottom: 50px;
+}
+.left-time h1 span {
+  color: #f22a5d;
+}
+.single {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 30px;
+}
+.single .image {
+  width: 70px;
+}
+.single img {
+  height: auto;
+}
+.description h3 {
+  font-size: 24px;
+  padding-bottom: 6px;
+}
+.description p {
+  font-size: 21px;
+}
+.description p span {
+  font-weight: bold;
+}
+/* ------------ left time styles end --------------- */
+/* --------------- right time styles start ----------  */
+.right-time {
+  padding-left: 150px;
+  position: relative;
+}
+.main-image {
+  width: 65%;
+}
+.img-position {
+  position: absolute;
+  z-index: -1;
+  left: 350px;
+  top: -60px;
+  width: 50%;
+}
+/* right time styles end  */
+/*=====================time money styles ends =======================*/
+/*=====================swap credit styles starts =======================*/
+#credit {
+  display: flex;
+  /* padding: 0 0 200px 150px; */
+  padding: 0 150px;
+  gap: 30px;
+  align-items: center;
+  height: 600px;
+}
+#credit > div {
+  flex: 0 0 auto;
+}
+.left-credit {
+  position: relative;
+  align-self: self-start;
+}
+.credit-img-position {
+  position: absolute;
+  top: 180px;
+  left: -100px;
+  z-index: -1;
+}
+.mid-credit {
+  margin-top: 30px;
+}
+.right-credit > h1 {
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+.right-credit > h1 > span {
+  color: #f22a5d;
+}
+.right-credit > h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.right-credit > p {
+  font-size: 21px;
+  margin-bottom: 10px;
+  width: 465px;
+}
+.right-credit > p > a {
+  color: #f22a5d;
+  text-decoration: none;
+}
+/*=====================swap credit styles ends =======================*/
+/*=====================fuel styles starts =======================*/
+#fuel {
+  display: flex;
+  /* padding: 0 0 200px 150px; */
+  padding: 0 120px;
+  gap: 30px;
+  align-items: center;
+  height: 600px;
+}
+
+#fuel > div {
+  flex: 0 0 auto;
+}
+.left-fuel {
+  margin-top: 30px;
+}
+.mid-fuel > h1 {
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+.mid-fuel > h1 > span {
+  color: #f22a5d;
+}
+.mid-fuel > h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.mid-fuel > p {
+  font-size: 21px;
+  margin-bottom: 20px;
+  width: 420px;
+}
+.mid-fuel > p > span {
+  color: #f22a5d;
+  text-decoration: none;
+}
+.right-fuel {
+  position: relative;
+  align-self: self-start;
+  margin-left: auto;
+}
+.fuel-img-position {
+  position: absolute;
+  top: 180px;
+  left: -30px;
+  z-index: -1;
+}
+/*=====================fuel styles ends =======================*/
+/*=====================bottom-banner styles starts =======================*/
+#bottom-banner {
+  padding: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#bottom-banner img {
+  width: 100%;
+}
+
+/*=====================bottom-banner styles ends =======================*/
+/* footer start  */
+footer {
+  background-image: url("../images/VoltaMoney---Home_Web.png");
+  padding: 50px;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  list-style: none;
+  align-items: center;
+  font-weight: bold;
+}
+ul > li {
+  line-height: 50px;
+}
+ul > li > p {
+  line-height: normal;
+  width: 200px;
+  text-align: center;
+  margin-top: 5px;
+}
+li.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* footer ends  */
+
+/* media query for desktops  */
+@media (max-width: 1365px) {
+  #time {
+    padding: 60px 70px;
+  }
+  .right-time {
+    padding-left: 50px;
+  }
+  .img-position {
+    left: 220px;
+    top: -60px;
+  }
+  .left-time h1 {
+    font-size: 36px;
+  }
+  .description h3 {
+    font-size: 20px;
+  }
+  .description p {
+    font-size: 16px;
+  }
+
+  /* credit css  */
+  #credit {
+    padding: 0 110px;
+    gap: 10px;
+  }
+  .left-credit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .left-main-img {
+    width: 80%;
+  }
+  .credit-img-position {
+    width: 80%;
+    left: -40px;
+  }
+  .right-credit > h1 {
+    font-size: 30px;
+  }
+  .right-credit > h4 {
+    font-size: 16px;
+  }
+  .right-credit > p {
+    font-size: 14px;
+    width: 300px;
+  }
+
+  /* fuel css  */
+  #fuel {
+    padding: 0 60px;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .mid-fuel > h1 {
+    font-size: 30px;
+  }
+  .mid-fuel > h4 {
+    font-size: 16px;
+  }
+  .mid-fuel > p {
+    font-size: 14px;
+    width: 300px;
+  }
+  .right-fuel {
+    display: flex;
+    justify-content: center;
+  }
+  .right-fuel-img {
+    width: 80%;
+  }
+  .fuel-img-position {
+    width: 80%;
+    left: 30px;
+  }
+  #bottom-banner {
+    padding: 100px;
+  }
+}
+
+@media (max-width: 1023px) {
+  /* banner left image start  */
+  .left-banner img {
+    width: 70%;
+  }
+  .light-green,
+  .dark-green {
+    width: 80%;
+  }
+  .dark-green {
+    bottom: 45px;
+  }
+  .left-banner > p {
+    font-size: 10px;
+  }
+  .right-banner {
+    margin-left: 40px;
+  }
+  .right-banner > h1{
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .right-banner > h3{
+    font-size: 18px;
+  }
+  .android-button{
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+
+  /* time responsive css  */
+  #time{
+    padding: 60px 50px;
+  }
+  .left-time h1{
+    font-size: 26px;
+    padding-left: 65px;
+  }
+}
