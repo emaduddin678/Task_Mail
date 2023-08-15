@@ -224,9 +224,7 @@ body {
   align-items: center;
   height: 600px;
 }
-#credit > div {
-  flex: 0 0 auto;
-}
+
 .left-credit {
   position: relative;
   align-self: self-start;
@@ -271,9 +269,9 @@ body {
   height: 600px;
 }
 
-#fuel > div {
+/* #fuel > div {
   flex: 0 0 auto;
-}
+} */
 .left-fuel {
   margin-top: 30px;
 }
@@ -451,24 +449,147 @@ li.logo {
   .right-banner {
     margin-left: 40px;
   }
-  .right-banner > h1{
+  .right-banner > h1 {
     font-size: 32px;
     line-height: 36px;
   }
-  .right-banner > h3{
+  .right-banner > h3 {
     font-size: 18px;
   }
-  .android-button{
+  .android-button {
     font-size: 10px;
     padding: 5px 10px;
   }
 
   /* time responsive css  */
-  #time{
+  #time {
     padding: 60px 50px;
   }
-  .left-time h1{
+  .left-time h1 {
     font-size: 26px;
     padding-left: 65px;
+  }
+  .img-position {
+    left: 150px;
+    top: -50px;
+  }
+  /* credit css  */
+  #credit {
+    padding: 0 60px;
+    height: 400px;
+  }
+  .left-main-img {
+    width: 70%;
+  }
+  .credit-img-position {
+    width: 70%;
+    top: 120px;
+  }
+  .right-credit > h1 {
+    font-size: 22px;
+    margin-bottom: 14px;
+  }
+  .right-credit > h4 {
+    font-size: 16px;
+  }
+  .right-credit > p {
+    font-size: 14px;
+    width: 200px;
+  }
+  /* fuel responsive css  */
+  #fuel {
+    height: 400px;
+  }
+  .mid-fuel > h1 {
+    font-size: 22px;
+    margin-bottom: 14px;
+  }
+  .mid-fuel > h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .mid-fuel > p {
+    font-size: 14px;
+    width: 300px;
+  }
+  .fuel-img-position {
+    top: 80px;
+    left: -10px;
+    z-index: -1;
+  }
+  #bottom-banner{
+    padding: 10px 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-banner{
+    flex-direction: column;
+  }
+  .left-banner > p{
+    text-align: center;
+  }
+  .right-banner{
+    text-align: center;
+    margin-left: 0;
+  }
+  .right-banner> h1{
+    font-size: 22px;
+    margin: 0 auto;
+    line-height: normal;
+  }
+  .right-banner > h3{
+    font-size: 12px;
+  }
+  .right-banner > p{
+    font-size: 10px;
+  }
+  .bottom-text-right P{
+    font-size: 12px;
+  }
+
+  /* time responsive css  */
+  #time{
+    flex-direction: column;
+    padding: 20px;
+    gap: 50px;
+  }
+  .left-time h1{
+    font-size: 22px;
+    padding-left: 0;
+    text-align: center;
+  }
+  /* credit  */
+  #credit{
+    padding: 20px;
+    flex-direction: column;
+    height: auto;
+  }
+  .credit-img-position{
+    left: 0px;
+  }
+  .mid-credit{
+    margin-top: 120px;
+  }
+
+  #fuel{
+    padding: 20px;
+    flex-direction: column;
+    height: auto;
+  }
+  #bottom-banner{
+    padding: 10px;
+    margin-top: 100px;
+  }
+  /* footer css  */
+  footer{
+    padding: 10px;
+  }
+  ul{
+    flex-direction: column;
+    gap: 10px;
+  }
+  ul > li > p{
+    width: 100%;
   }
 }
